@@ -25,7 +25,7 @@ class DeckMain extends React.Component {
                     style={styles.addCard}>
                     <Text style={styles.addCardTitle}>Add Card</Text>
                 </TouchableOpacity>
-
+		{(questions.length > 0) ? ( 
                 <TouchableOpacity
                     onPress={() => {
                         this.props.navigation.navigate('QuizMain', {
@@ -36,7 +36,7 @@ class DeckMain extends React.Component {
                     style={styles.startQuiz}>
                     <Text style={styles.startQuizTitle}>Start Quiz</Text>
                 </TouchableOpacity>
-
+		) : null}
             </View>
         );
     }
