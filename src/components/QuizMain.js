@@ -110,7 +110,7 @@ export default class QuizMain extends React.Component {
                                         height: 30,
                                         textAlign: 'center',
                                         width: 200
-                                    }}>Start Quiz</Text>
+                                    }}>Restart Quiz</Text>
                                 </TouchableOpacity>
                                 <TouchableOpacity onPress={this.backToDeck}>
                                     <Text style={{
